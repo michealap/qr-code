@@ -1,0 +1,91 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  overflow: hidden;
+  background: var(--light-gray);
+  color: var(--grayish-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 31rem;
+  height: 48rem;
+  margin: 20% auto;
+  padding: 0 1rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+}
+
+.container > * {
+  margin: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.code-wrap {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  width: 28rem;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.card-content {
+  margin: 0;
+  text-align: center;
+}
+.card-content h1 {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1.3rem;
+}
+
+.card-content p {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--grayish-blue);
+}
+
+@media screen and (min-width: 1020px) {
+  .container {
+    margin-top: 10%;
+  }
+}
